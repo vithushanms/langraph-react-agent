@@ -9,11 +9,14 @@ packages = [{include = "langraph_react_agent"}]
 [tool.poetry.dependencies]
 python = "^3.13"
 langchain-community = "^0.3.19"
-langgraph = "^0.3.5"
+langgraph = {extras = ["checkpoint"], version = "^0.3.14"}
 langchain-openai = "^0.3.8"
 duckduckgo-search = "^7.5.1"
 langchain-core = "^0.3.43"
 pygraphviz = "^1.14"
+tavily-python = "^0.5.1"
+beautifulsoup4 = "^4.13.3"
+langgraph-checkpoint-sqlite = "^2.0.6"
 
 
 [build-system]
